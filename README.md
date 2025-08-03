@@ -39,14 +39,16 @@ Para ejecutar las pruebas de automatización, utiliza Maven. Asegúrate de estar
 
   * return Karate.run("classpath:actualizarUsuario.feature");
   
-  Reemplaza actualizaUsuario por cualquier feature que necesites ejecutar.
+- Reemplaza actualizaUsuario por cualquier feature que necesites ejecutar.
 
-  La lista de features son:
-    //listarUsuario.feature
-    //buscarUsuarioPorId.feature
-    //registrarUsuario.feature
-    //eliminarUsuario.feature
-    //actualizarUsuario.feature
+- Hacer clic derecho sobre el archivo karateRunner.java y dar a ´Run 'karateRunner'´.
+
+  * La lista de features son:
+    - listarUsuario.feature
+    - buscarUsuarioPorId.feature
+    - registrarUsuario.feature
+    - eliminarUsuario.feature
+    - actualizarUsuario.feature
 
 ### Visualización de Reportes
 Después de la ejecución, Maven generará un reporte de los resultados de las pruebas. Lo puedes encontrar en la siguiente ruta:
