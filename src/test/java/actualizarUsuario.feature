@@ -29,8 +29,9 @@ Feature:
     And print response
     * match response == consulta201
     Examples:
-      | caso_prueba                | nome                  | email                  | password | administrador | _id              |
-      | Usuario registrado con PUT | Nuevo usuario con PUT | nuevoUsuario@qa.com.br | prueba   | true          | 1234567890123456 |
+      | caso_prueba                                | nome                          | email                  | password | administrador | _id              |
+      | Usuario registrado con PUT                 | Nuevo usuario con PUT         | nuevoUsuario@qa.com.br | prueba   | true          | 1234567890123456 |
+      | Registro de usuario llamando a id inválida | Tal vez nuevo usuario con PUT | talvez@qa.com.br       | prueba   | true          | 1234             |
 
   Scenario Outline: Caso 03 - Código HTTP 400 - Caso de Prueba <caso_prueba>
     Given url 'https://serverest.dev'
@@ -41,5 +42,5 @@ Feature:
     And print response
     * match response == consulta400_1
     Examples:
-      | caso_prueba                              | nome                      | email                  | password | administrador | _id              |
-      | ID existente, pero email de otro usuario | Itento de edición con PUT | nuevoUsuario@qa.com.br | prueba   | true          | CajWsmMp6OvFUszQ |
+      | caso_prueba                              | nome                       | email                  | password | administrador | _id              |
+      | ID existente, pero email de otro usuario | Intento de edición con PUT | nuevoUsuario@qa.com.br | prueba   | true          | CajWsmMp6OvFUszQ |

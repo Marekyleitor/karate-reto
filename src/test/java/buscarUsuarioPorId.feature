@@ -34,7 +34,7 @@ Feature:
       | ID con 16 caracteres pero un *          | 123456789012345* |
       | ID con 16 caracteres pero un &          | 123456789012345& |
 
-  Scenario Outline: Caso 01 - Código HTTP 400 - Caso de Prueba <caso_prueba>
+  Scenario Outline: Caso 03 - Código HTTP 400 - Caso de Prueba <caso_prueba>
     Given url 'https://serverest.dev'
     And path 'usuarios', '<_id>'
     When method GET
